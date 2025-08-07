@@ -4,6 +4,7 @@ body {
     background-color: #000000;
     color: #FFFFFF;
     font-family: "Heebo", "Noto Sans", sans-serif;
+    background-attachment: fixed;
 }
 
 * {
@@ -13,19 +14,33 @@ body {
 }
 
 .header {
-    height: 20vh;
+    width: 100vw;
     border-bottom: 2px black;
-    z-index: 1111111111111111111111;
+    position: fixed;
+    z-index: 999999999;
 }
 
 .header nav {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
+    margin: .5rem;
 }
 
 .header nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+.header nav ul li {
+    padding: 0 1.6rem 0 0;
+}
+
+.header nav ul li a {
     text-decoration: none;
+    color: #FFFFFF;
+    opacity: .3;
 }
 
 .content {
@@ -34,13 +49,56 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
 }
 
-.title h1 {
-    
+.title {
+    font-size: 3.8rem;
 }
 
-.subtitle h2 {
-    font-size: 2px;
+.subtitle {
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.content__button {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.content__button a {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    opacity: .8;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.projects .project {
+    width: 200px;
+    height: 200px;
+    background-color: #FFFFFF;
+}
+
+.projects__title {
+    padding: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.footer_icons {
     color: #FFFFFF;
 }
