@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+    width: 100vw;
+    border-bottom: 2px black;
+    position: fixed;
+    z-index: 999999999;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: .5rem;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+.header nav ul li {
+    padding: 0 1.6rem 0 0;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: .3;
+    transition: all 600ms ease;
+}
+
+.header nav ul li a:hover {
+    opacity: 1;
+}

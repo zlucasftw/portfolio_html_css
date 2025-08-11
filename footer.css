@@ -1,0 +1,25 @@
+.footer__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    list-style: none;
+    text-decoration: none;
+    padding: 12rem 0 1.5rem 0;
+}
+
+.footer__icons li a {
+    color: #FFFFFF;
+}
+
+.github__icon li a svg {
+    width: 16px;
+    height: 16px;
+}
+
+.copyright {
+    font-size: .7rem;
+    padding: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
