@@ -23,11 +23,13 @@ body {
 
 .title {
     font-size: 3.8rem;
+    animation: beginningContent 4000ms ease-out forwards;
 }
 
 .subtitle {
     font-size: 1rem;
     color: #FFFFFF;
+    animation: beginningContent 4000ms ease-out forwards;
 }
 
 .content__button {
@@ -38,6 +40,7 @@ body {
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    transition: opacity 4000ms ease-out 400ms;
 }
 
 .content__button a {
@@ -88,8 +91,23 @@ body {
 }
 
 .projects .projects__cards .project .project__card__item {
-    width: 300px;
+    width: 50%;
     height: 300px;
     display: flex;
     background-color: #FFFFFF;
+}
+
+.project__card__item img {
+    object-fit: contain;
+}
+
+@keyframes beginningContent {
+    0% {
+        opacity: 0;
+        transform: scale(1.15);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

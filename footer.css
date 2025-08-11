@@ -8,13 +8,22 @@
     padding: 12rem 0 1.5rem 0;
 }
 
+.footer__icons ul li {
+    padding: 0 2rem;
+}
+
 .footer__icons li a {
     color: #FFFFFF;
 }
 
-.github__icon li a svg {
-    width: 16px;
-    height: 16px;
+.github__icon,
+.linkedin__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 32px;
+    height: auto;
 }
 
 .copyright {
