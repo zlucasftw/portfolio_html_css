@@ -1,0 +1,70 @@
+.main {
+    margin-top: 4rem;
+    padding: 0 2rem;
+}
+
+.main .biography__section {
+    margin-top: 2rem;
+}
+
+.main .biography__section .biography__photo {
+    text-align: center;
+}
+
+.main .biography__section .biography__photo img {
+   /*  max-width: 60%;
+    min-width: 10%; */
+    width: 440px;
+    height: 587px;
+    width: auto;
+    box-shadow: 0 0 30px 20px rgba(11, 37, 36, .35);
+}
+
+/* img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    vertical-align: bottom;
+} */
+
+.main .biography__section .biography__title {
+    padding: 6rem 0 6rem 0;
+    font-size: 3.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.biography__text {
+    width: 100%;
+    max-width: 790px;
+    margin: 0 auto;
+    padding: 0 .3rem 120px 5px;
+    font-family: "Heebo", sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: .7px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.biography__text p {
+    display: block;
+    margin-bottom: 3rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* @media only screen and (max-width: 769px) {
+    .main .biography__section .biography__title {
+        font-size: 2.8rem;
+    }
+
+    .main .biography__section .biography__photo img {
+        max-height: 587px;
+    }
+} */

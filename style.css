@@ -1,18 +1,6 @@
-body {
-    background-color: #000000;
-    color: #FFFFFF;
-    font-family: "Heebo", "Noto Sans", sans-serif;
-    background-attachment: fixed;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 .content {
-    height: 100vh;
+    width: 100vw;
+    height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +29,11 @@ body {
     align-content: center;
     flex-direction: column;
     transition: opacity 4000ms ease-out 400ms;
+    opacity: 0;
+}
+
+.loaded .content__button {
+    opacity: 1;
 }
 
 .content__button a {
@@ -49,7 +42,13 @@ body {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
-    transition: all 600ms ease;
+    transition: all 400ms ease;
+    transition-duration: 400ms;
+    opacity: 0;
+}
+
+.loaded .content__button a {
+    opacity: 1;
 }
 
 .content__button a:hover {
@@ -91,14 +90,18 @@ body {
 }
 
 .projects .projects__cards .project .project__card__item {
-    width: 50%;
-    height: 300px;
+    width: 50vw;
+    border: 1px solid #FFFFFF;
     display: flex;
     background-color: #FFFFFF;
 }
 
 .project__card__item img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+    margin: 0;
+    padding: 0;
 }
 
 @keyframes beginningContent {

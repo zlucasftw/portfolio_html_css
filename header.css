@@ -1,10 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "Heebo", "Noto Sans", sans-serif;
+    background-attachment: fixed;
+}
+
+.active {
+    opacity: 1 !important;
+}
+
 .header {
     width: 100vw;
     border-bottom: 2px black;
     position: fixed;
     z-index: 999999999;
+    padding: 0 3rem;
 }
 
 .header nav {
@@ -33,4 +57,26 @@
 
 .header nav ul li a:hover {
     opacity: 1;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 46px;
+}
+
+.header__logo .header__logo__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    flex-wrap: nowrap;
+}
+
+.header__logo .header__logo__subtitle {
+    font-size: .7rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    flex-wrap: nowrap;
 }

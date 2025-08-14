@@ -14,16 +14,22 @@
 
 .footer__icons li a {
     color: #FFFFFF;
+    margin: 0 1rem;
 }
 
 .github__icon,
-.linkedin__icon {
+.linkedin__icon,
+.email__icon {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 32px;
-    height: auto;
+}
+
+.github__icon:hover,
+.linkedin__icon:hover,
+.email__icon:hover {
+    opacity: .8;
 }
 
 .copyright {
