@@ -16,6 +16,10 @@ body {
     background-color: #000000;
     color: #FFFFFF;
     font-family: "Heebo", "Noto Sans", sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    padding: 0 6rem 0 0;
     background-attachment: fixed;
 }
 
@@ -65,6 +69,7 @@ body {
     flex-direction: column;
     width: 100%;
     height: 46px;
+    cursor: pointer;
 }
 
 .header__logo .header__logo__title {
@@ -79,4 +84,9 @@ body {
     font-weight: 300;
     letter-spacing: .2rem;
     flex-wrap: nowrap;
+}
+
+.header__logo__link {
+    text-decoration: none;
+    color: #FFFFFF;
 }
