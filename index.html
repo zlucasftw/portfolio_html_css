@@ -9,19 +9,34 @@
         <link rel="stylesheet" href="footer.css"/>
     </head>
     <body id="home">
+        
         <header class="header">
-            <nav>
-                <a href="#home" class="header__logo__link">
-                    <div class="header__logo">
-                        <h1 class="header__logo__title">LUCAS GÓIS</h1>
-                        <h1 class="header__logo__subtitle">OFFICIAL WEBSITE</h1>
-                    </div>
-                </a>
-                <ul>
-                    <li><a href="bio.html">BIO</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
+            <a href="#home" class="header__logo__link">
+                <div class="header__logo">
+                    <h1 class="header__logo__title">LUCAS GÓIS</h1>
+                    <h1 class="header__logo__subtitle">OFFICIAL WEBSITE</h1>
+                </div>
+            </a>
+            <button id="nav__open__button" class="menu__open__button" onclick="openSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+            <nav id="navbar" class="nav">
+                <div class="nav__menu">
+                    <ul class="nav__menu__links">
+                        <li>
+                            <button id="nav__close__button" onclick="closeSideBar()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li><a href="bio.html" class="nav__link">BIO</a></li>
+                        <li><a href="projects.html" class="nav__link">PROJECTS</a></li>
+                        <li><a href="contact.html" class="nav__link">CONTACT</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
@@ -32,48 +47,48 @@
             </div>
 
             <div class="content__button">
-                <a href="#projects" class="start__button">START</a>
+                <a href="#projects__target" class="start__button">START</a>
             </div>
         </main>
 
-        <section class="projects" aria-label="Projects Links">
+        <section id="projects__target" class="projects" aria-label="Projects Links">
 
                 <h1 class="projects__title">PROJECTS</h1>
 
                     <section class="projects__cards">
                         
                         <div class="carousel" data-carousel>
-                            <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
-                            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+                            
+                            <!-- <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
+                            <button class="carousel-button next" data-carousel-button="next">&#8250;</button> -->
+                            
                             <ul data-slides>
                                 <li class="slide" data-active>
-                                <div class="projects__cards__item">
-                            <a href="">
-                                <div class="projects__cards__item__type">
-                                    Plann.er
-                                </div>
-                            
-                                <div class="projects__cards__item__image">
-                                    <img src="assets/img/projects/backend/image_01.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true" width="400" height="400"/>
-                                </div>
-                            
-                            
-                                <div class="projects__cards__item__description">
-                                    Plann.er is a REST API for managing tasks and projects.
-                                </div>
-                            </a>
-                                </div>
-                                <!-- </li> -->
+                                    <div class="projects__cards__item">
+                                    <a href="">
+                                        <div class="projects__cards__item__type">
+                                            Plann.er
+                                        </div>
+                                    
+                                        <div class="projects__cards__item__image">
+                                            <img src="assets/img/projects/image_01.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true" width="400" height="400"/>
+                                        </div>
+                                    
+                                    
+                                        <div class="projects__cards__item__description">
+                                            Plann.er is a REST API for managing tasks and projects.
+                                        </div>
+                                    </a>
+                                    </div>
                                 
-                                <!-- <li class="slide" data-active> -->
-                                <div class="projects__cards__item" data-active>
+                                    <div class="projects__cards__item">
                             <a href="">
                                 <div class="projects__cards__item__type">
                                     Nearby
                                 </div>
                             
                                 <div class="projects__cards__item__image">
-                                    <img src="assets/img/projects/backend/image_02.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
+                                    <img src="assets/img/projects/image_02.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
                                 </div>
                             
                             
@@ -81,123 +96,123 @@
                                     Nearby is a React Native app for <br> finding nearby restaurants and their food options.
                                 </div>
                             </a>
-                                </div>
-                                <!-- </li> -->
+                                    </div>
+                                
 
-                                <!-- <li class="slide" data-active> -->
-                                <div class="projects__cards__item" data-active>
-                            <a href="">
-                                <div class="projects__cards__item__type">
-                                    IMAGINE
-                                </div>
+                                    <div class="projects__cards__item">
+                                    <a href="">
+                                        <div class="projects__cards__item__type">
+                                            IMAGINE
+                                        </div>
                             
-                                <div class="projects__cards__item__image">
-                                    <img src="assets/img/projects/backend/image_01.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
-                                </div>
+                                        <div class="projects__cards__item__image">
+                                            <img src="assets/img/projects/image_03.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
+                                        </div>
                             
                             
-                                <div class="projects__cards__item__description">
-                                    Plann.er is a Java REST API for managing travels, referrals, and bookings.
-                                </div>
-                            </a>
-                                </div>
-                                <!-- </li> -->
+                                        <div class="projects__cards__item__description">
+                                            Imagine is
+                                        </div>
+                                    </a>
+                                    </div>
+
+                                    <div class="projects__cards__item">
+                                    <a href="">
+                                        <div class="projects__cards__item__type">
+                                            BONES
+                                        </div>
+                            
+                                        <div class="projects__cards__item__image">
+                                            <img src="assets/img/projects/image_01.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
+                                        </div>
+                            
+                            
+                                        <div class="projects__cards__item__description">
+                                            Bones is a website for music enthusiasts
+                                        </div>
+                                    </a>
+                                    </div>
+
+                                </li>
+
+                                <li class="slide">
+                                    <div class="projects__cards__item">
+                                        <a href="">
+                                            <div class="projects__cards__item__type">
+                                                URL SHORTNER
+                                            </div>
+                                        
+                                            <div class="projects__cards__item__image">
+                                                <img src="assets/img/projects/image_04.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
+                                            </div>
+                                        
+                                        
+                                            <div class="projects__cards__item__description">
+                                                A simple backend for shortening URLs <br> with Java and AWS (Lambda, S3, )
+                                            </div>
+                                        </a>
+                                    </div>
                         
-                                <!-- <li class="slide"> -->
-                                <div class="projects__cards__item" data-active>
-                            <a href="">
-                                <div class="projects__cards__item__type">
-                                    Plann.er
-                                </div>
-                            
-                                <div class="projects__cards__item__image">
-                                    <img src="assets/img/projects/backend/image_01.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
-                                </div>
-                            
-                            
-                                <div class="projects__cards__item__description">
-                                    Plann.er is a REST API for managing tasks and projects.
-                                </div>
-                            </a>
-                                </div>
+                                    <div class="projects__cards__item">
+                                        <a href="">
+                                            <div class="projects__cards__item__type">
+                                                Plann.er
+                                            </div>
+                                        
+                                            <div class="projects__cards__item__image">
+                                                <img src="assets/img/projects/image_05.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
+                                            </div>
+                                        
+                                        
+                                            <div class="projects__cards__item__description">
+                                                Plann.er is a REST API for managing tasks and projects.
+                                            </div>
+                                        </a>
+                                    </div>
+                        
+                                    <div class="projects__cards__item">
+                                        <a href="">
+                                            <div class="projects__cards__item__type">
+                                                Plann.er
+                                            </div>
+                                        
+                                            <div class="projects__cards__item__image">
+                                                <img src="assets/img/projects/image_06.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
+                                            </div>
+                                        
+                                        
+                                            <div class="projects__cards__item__description">
+                                                Plann.er is a REST API for managing tasks and projects.
+                                            </div>
+                                        </a>
+                                    </div>
+                        
+                                    <div class="projects__cards__item">
+                                        <a href="">
+                                            <div class="projects__cards__item__type">
+                                                Plann.er
+                                            </div>
+                                        
+                                            <div class="projects__cards__item__image">
+                                                <img src="assets/img/projects/backend/image_06.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
+                                            </div>
+                                        
+                                        
+                                            <div class="projects__cards__item__description">
+                                                Plann.er is a REST API for managing tasks and projects.
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </li>
 
                             </ul>
                         </div>
-                        
-                        <div class="projects__cards__item">
-                            <a href="">
-                                <div class="projects__cards__item__type">
-                                    Plann.er
-                                </div>
-                            
-                                <div class="projects__cards__item__image">
-                                    <img src="assets/img/projects/backend/image_01.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
-                                </div>
-                            
-                            
-                                <div class="projects__cards__item__description">
-                                    Plann.er is a REST API for managing tasks and projects.
-                                </div>
-                            </a>
-                        </div>
-                        <div class="projects__cards__item">
-                            <a href="">
-                                <div class="projects__cards__item__type">
-                                    Plann.er
-                                </div>
-                            
-                                <div class="projects__cards__item__image">
-                                    <img src="assets/img/projects/backend/image_01.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
-                                </div>
-                            
-                            
-                                <div class="projects__cards__item__description">
-                                    Plann.er is a REST API for managing tasks and projects.
-                                </div>
-                            </a>
-                        </div>
-                        <div class="projects__cards__item">
-                            <a href="">
-                                <div class="projects__cards__item__type">
-                                    Plann.er
-                                </div>
-                            
-                                <div class="projects__cards__item__image">
-                                    <img src="assets/img/projects/backend/image_01.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
-                                </div>
-                            
-                            
-                                <div class="projects__cards__item__description">
-                                    Plann.er is a REST API for managing tasks and projects.
-                                </div>
-                            </a>
-                        </div>
-                        <div class="projects__cards__item">
-                            <a href="">
-                                <div class="projects__cards__item__type">
-                                    Plann.er
-                                </div>
-                            
-                                <div class="projects__cards__item__image">
-                                    <img src="assets/img/projects/backend/image_01.png" alt="Imagem do Projeto Backend Plann.er" data-lazy="true"/>
-                                </div>
-                            
-                            
-                                <div class="projects__cards__item__description">
-                                    Plann.er is a REST API for managing tasks and projects.
-                                </div>
-                            </a>
-                        </div>
-
                     </section>
-                    
-
-
         </section>
 
         <section class="tech__stack">
-            <h1>TECHNOLOGIES</h1>
+            <h1 class="tech__title">TECHNOLOGIES</h1>
 
 
         </section>
