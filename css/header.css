@@ -288,19 +288,21 @@ main {
 
     .nav {
         display: block;
+        max-width: 100vw;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         position: fixed;
         top: 0;
         right: -100%;
-        height: 100vh;
+        /* height: 100vh;
+        width: 100vw; */
         /* width: min(45%, 100%); */
-        z-index: 100;
+        z-index: 9999;
         border-left: 1px solid rgba(255, 255, 255, .1);
         /* backdrop-filter: blur(2px); */
         background-color: #000000;
         transition: right 300ms ease-out;
-        overflow-y: hidden;
+        overflow-y: auto;
         overflow-x: hidden;
     }
 
@@ -320,14 +322,16 @@ main {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        gap: 2rem;
     }
 
-    .nav .nav__link {
+    .header .nav__menu .nav__menu__links .nav__link {
         width: 100%;
         font-size: 2.5rem;
         line-height: 1;
         opacity: 1;
         color: #FFFFFF;
+        opacity: 1;
         
         /* padding-left: 1rem; */
     }
