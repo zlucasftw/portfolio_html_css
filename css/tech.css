@@ -1,3 +1,7 @@
+.tech__stack {
+    padding: 10rem 0 2rem 0;
+}
+
 .tech__experience {
     display: flex;
     justify-content: space-evenly;
@@ -30,9 +34,14 @@
     color: rgb(212, 212, 212) / 1;
 }
 
+.tech__tools {
+    width: 678px;
+    height: 352px;
+}
+
 .tech__icons {
     /* border: 1px solid black; */
-    max-width: 90%;
+    max-width: 80%;
     width: 688px;
     /* margin-inline: auto; */
     position: relative;
@@ -48,12 +57,14 @@
 }
 
 .item {
+    display: flex;
+    justify-content: center;
     width: 200px;
     height: 100px;
-    background-color: rgba(249, 250, 251, .1);
+    background-color: rgba(255, 255, 255, 0.295);
     border-radius: 6px;
     position: absolute;
-    left: max(calc(200px * 8), 100%);
+    left: max(calc(200px * 8), 80%);
     animation-name: scrollLeft;
     animation-duration: 30s;
     animation-timing-function: linear;
@@ -68,7 +79,28 @@
 }
 
 .item svg {
+    width: 90px;
+    height: 90px;
     text-align: center;
+}
+
+.tech__link {
+    display: inline-flex;
+    font-size: .75rem;
+    line-height: 1rem;
+    padding: 2rem .75rem 0 .75rem;
+    border-radius: .375rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.tech__link svg {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0 0 .5rem;
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1rem;
 }
 
 @keyframes scrollLeft {

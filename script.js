@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const body = document.querySelector("body");
     body.classList.add("loaded");
 
+
+// TODO: Change the carousel functionality
 /*     const carousel = document.querySelector("[data-carousel]");
 
     if (carousel) {
@@ -37,7 +39,10 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     } */
+// TODO: Change the carousel functionality
 });
+
+
 
 const buttons = document.querySelectorAll("[data-carousel-button]");
 

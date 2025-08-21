@@ -286,6 +286,13 @@ main {
         padding: 0 0 0 1rem;
     }
 
+    /* body { */
+        /* overflow: hidden; */
+        /* height: 100vh;
+        position: fixed;
+        width: 100%; */
+    /* } */
+
     .nav {
         display: block;
         max-width: 100vw;
@@ -302,7 +309,7 @@ main {
         /* backdrop-filter: blur(2px); */
         background-color: #000000;
         transition: right 300ms ease-out;
-        overflow-y: auto;
+        overflow-y: hidden;
         overflow-x: hidden;
     }
 
@@ -312,17 +319,25 @@ main {
 
     .nav .nav__menu {
         width: 100%;
+        /* height: 100%; */
         display: flex;
+        /* justify-content: center; */
         flex-direction: column;
+        overflow: hidden;
     }
 
     .nav .nav__menu__links {
+        /* width: 100%; */
+        /* height: 60vh; */
         width: 100%;
+        height: 50vh;
         display: flex;
         justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         flex-direction: column;
         gap: 2rem;
+        
     }
 
     .header .nav__menu .nav__menu__links .nav__link {
@@ -331,8 +346,10 @@ main {
         line-height: 1;
         opacity: 1;
         color: #FFFFFF;
-        opacity: 1;
-        
+        /* opacity: 1; */
+        text-align: center;
+        margin: 0;
+        padding: 0;
         /* padding-left: 1rem; */
     }
 

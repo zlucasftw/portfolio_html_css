@@ -9,6 +9,10 @@
     z-index: 2;
 }
 
+.logo {
+    text-align: center;
+}
+
 .title {
     font-size: 3.8rem;
     font-weight: 700;
@@ -21,6 +25,26 @@
     font-size: 1rem;
     color: #FFFFFF;
     animation: beginningContent 4000ms ease-out forwards;
+}
+
+.description {
+    max-width: 900px;
+    margin: 6rem 0 4rem 0;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: rgba(113, 113, 112, 1);
+}
+
+.description > span {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: rgb(113, 113, 122);
+    text-decoration-line: underline;
+}
+
+.description span:hover {
+    color: rgb(212, 212, 216);
+    transition-duration: .5s;
 }
 
 .content__button {
@@ -130,9 +154,9 @@ a
 .projects .projects__cards 
 .projects__cards__item a 
 .projects__cards__item__image img {
-    /* max-width: 100%; */
-    max-width: 293.5px;
-    min-width: 293.5px;
+    max-width: 100%;
+    /* max-width: 293.5px;
+    min-width: 293.5px; */
     width: 293.5px;
     height: 293.5px;
     object-fit: cover;
@@ -148,6 +172,7 @@ a
     z-index: 2;
     bottom: 0;
     max-width: 100%;
+    width: 100%;
     text-align: center;
     font-size: .7rem;
     padding: 1.25rem 0;
@@ -266,7 +291,7 @@ a
     color: #FFFFFF;
 }
 
-.carousel__button:focus {
+.carousel__button.prev:focus {
     outline: none;
 }
 
@@ -276,10 +301,6 @@ a
 
 .carousel__button.next {
     right: -4rem;
-}
-
-.tech__stack {
-    padding: 10rem 0;
 }
 
 @media screen and (max-width: 768px) {
