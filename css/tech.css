@@ -1,0 +1,78 @@
+.tech__experience {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0 .7rem;
+}
+
+.tech__graduation {
+    display: flex;
+    /* align-items: last baseline; */
+    justify-content: flex-end;
+    flex-direction: column;
+    max-width: 331px;
+    height: 352px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0 2rem;
+}
+
+.tech__graduation__icon {
+    width: 48px;
+    color: rgb(64, 64, 64);
+}
+
+.tech__graduation__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    color: rgb(212, 212, 212) / 1;
+}
+
+.tech__icons {
+    /* border: 1px solid black; */
+    max-width: 90%;
+    width: 688px;
+    /* margin-inline: auto; */
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0)
+    );
+}
+
+.item {
+    width: 200px;
+    height: 100px;
+    background-color: rgba(249, 250, 251, .1);
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: calc(30s / 8 * (8 - var(--n)) * -1);
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.item svg {
+    text-align: center;
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -20%;
+    }
+}

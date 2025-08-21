@@ -311,7 +311,7 @@ a
     }
 }
 
-@media screen and (max-width: 1350px) {
+/* @media screen and (max-width: 1350px) {
     .slide[data-active] {
         display: flex;
         opacity: 1;
@@ -334,4 +334,4 @@ a
         right: -4rem;
     }
 
-}
+} */
