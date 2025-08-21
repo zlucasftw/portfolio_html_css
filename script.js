@@ -109,3 +109,28 @@ function openSideBar() {
 function closeSideBar() {
     navbar.classList.remove("show");
 }
+
+const navOpenButton = document.getElementById("nav__open__button");
+const navCloseButton = document.getElementById("nav__close__button");
+const nav = document.querySelector('.nav');
+const body = document.body;
+const navLinks = document.querySelectorAll(".nav__menu__links .nav__link");
+
+navOpenButton.addEventListener("click", () => {
+    body.classList.add("nav__open");
+    navOpenButton.setAttribute("aria-expanded", "true");
+});
+
+navCloseButton.addEventListener("click", () => {
+    body.classList.remove("nav__open");
+    navCloseButton.setAttribute("aria-expanded", "false");
+});
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        body.classList.remove("show");
+        body.classList.remove("nav__open");
+        navOpenButton.setAttribute("ARIA")
+    });
+})
+

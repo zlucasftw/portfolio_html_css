@@ -251,7 +251,7 @@ main {
 
 #nav__open__button {
     display: none;
-    background: #0000008f;
+    background: none;
     color: #FFFFFF;
     border: none;
     padding: 0 1rem 2rem 0;
@@ -262,7 +262,7 @@ main {
 #nav__close__button {
     /* width: 32px; */
     display: none;
-    background: #000000;
+    background: none;
     color: #FFFFFF;
     border: none;
     padding: 0 1rem 2rem 0;
@@ -286,11 +286,19 @@ main {
         padding: 0 0 0 1rem;
     }
 
-    /* body { */
-        /* overflow: hidden; */
-        /* height: 100vh;
+    body.nav__open {
+        width: 100%;
+        height: 100vh;
         position: fixed;
-        width: 100%; */
+        overflow: hidden;
+    }
+
+    /* body {
+        width: 100vw;
+        overflow: hidden;
+        overflow-x: hidden; */
+        /* height: 100vh; */
+        /* position: fixed; */
     /* } */
 
     .nav {
@@ -311,6 +319,8 @@ main {
         transition: right 300ms ease-out;
         overflow-y: hidden;
         overflow-x: hidden;
+        /* -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain; */
     }
 
     .nav.show {
