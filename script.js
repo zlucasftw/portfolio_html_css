@@ -28,6 +28,26 @@ buttons.forEach(button => {
     });
 });
 
+setInterval(() => {
+    const slides = document.querySelector("[data-slides]");
+
+    let activeSlide = slides.querySelector("[data-active]");
+
+    let index = [...slides.children].indexOf(activeSlide) + 1;
+
+    if (index < 0) {
+        index = slides.children.length - 1;
+    }
+
+    if (index >= slides.children.length) {
+        index = 0;
+    }
+
+    slides.children[index].dataset.active = true;
+    delete activeSlide.dataset.active;
+
+}, 6500);
+
 /* const navOpenButton = document.querySelector("#open__nav");
 const navCloseButton = document.querySelector("#close__nav");
 

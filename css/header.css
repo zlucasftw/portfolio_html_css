@@ -11,8 +11,9 @@ html {
 }
 
 body {
-    /* width: 100vw;
-    height: 100vh; */
+    width: 100%;
+    height: 100%;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     background-color: #000000;
@@ -259,8 +260,9 @@ main {
 }
 
 #nav__close__button {
+    /* width: 32px; */
     display: none;
-    background: #0000008f;
+    background: #000000;
     color: #FFFFFF;
     border: none;
     padding: 0 1rem 2rem 0;
@@ -279,15 +281,21 @@ main {
         padding: 2rem 1.2rem;
     }
 
+    .header__logo__link {
+        padding: 0 0 0 1rem;
+    }
+
     .nav {
+        width: 100%;
         position: fixed;
         top: 0;
         right: -100%;
         height: 100vh;
-        width: min(45%, 100%);
+        /* width: min(45%, 100%); */
         z-index: 100;
         border-left: 1px solid rgba(255, 255, 255, .1);
-        backdrop-filter: blur(2px);
+        /* backdrop-filter: blur(2px); */
+        background-color: #000000;
         transition: right 300ms ease-out;
     }
 
@@ -302,7 +310,9 @@ main {
 
     .nav .nav__link {
         width: 100%;
-        padding-left: 1rem;
+        font-size: 2.5rem;
+        line-height: 1;
+        /* padding-left: 1rem; */
     }
 
     .header__logo .header__logo__title {
