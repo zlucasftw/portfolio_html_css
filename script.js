@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const body = document.querySelector("body");
     body.classList.add("loaded");
 
-    const carousel = document.querySelector("[data-carousel]");
+/*     const carousel = document.querySelector("[data-carousel]");
 
     if (carousel) {
         const slides = carousel.querySelector("[data-slides]");
@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 updateCarousel();
             });
         });
-    }
+    } */
 });
 
-/* const buttons = document.querySelectorAll("[data-carousel-button]");
+const buttons = document.querySelectorAll("[data-carousel-button]");
 
 buttons.forEach(button => {
     button.addEventListener("click", () => {
@@ -82,7 +82,7 @@ setInterval(() => {
     slides.children[index].dataset.active = true;
     delete activeSlide.dataset.active;
 
-}, 6500); */
+}, 6500);
 
 /* const navOpenButton = document.querySelector("#open__nav");
 const navCloseButton = document.querySelector("#close__nav");

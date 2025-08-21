@@ -1,4 +1,4 @@
-.carousel {
+/* .carousel {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -42,17 +42,17 @@
     align-items: center;
     background: none;
     transition: background-color 0.3s;
-}
+} */
 
-.carousel-button:hover {
+/* .carousel-button:hover { */
     /* background: rgba(0, 0, 0, 0.8); */
-}
+/* } */
 
-.carousel__button.prev {
+/* .carousel__button.prev {
     left: 0;
 }
 
 .carousel__button.next {
     right: 0;
 }
-
+ */

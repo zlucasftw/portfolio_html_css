@@ -88,7 +88,7 @@
 }
 
 .projects .projects__cards__item {
-    width: 300px;
+    min-width: 300px;
     height: 300px;
     position: relative;
     overflow: hidden;
@@ -131,6 +131,8 @@ a
 .projects__cards__item a 
 .projects__cards__item__image img {
     /* max-width: 100%; */
+    max-width: 293.5px;
+    min-width: 293.5px;
     width: 293.5px;
     height: 293.5px;
     object-fit: cover;
@@ -166,64 +168,65 @@ a
     }
 }
 
-/* .carousel {
-    position: relative; */
-    /* display: flex; */
-/*     width: 100%; */
-    /* max-width: 100%;
+.carousel {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
     height: 320px;
     flex-direction: row;
+    flex-wrap: wrap;
+    /* height: 100vh;
     flex-wrap: wrap; */
-    /* height: 100vh; */
-    /* flex-wrap: wrap; */
-    /* transition: transform 0.5s ease-in-out; */
-/*     overflow: hidden;
-} */
+    transition: transform 0.5s ease-in-out;
+    /* overflow: hidden; */
+}
 
-/* .carousel > ul[data-slides] { */
-    /* height: auto; */
-    /* width: 100%;
-    height: 100%; */
-    /* position: relative; */
-/*     margin: 0;
+.carousel > ul {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    /* height: 100%; */
+    position: relative;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     transition: transform 0.5s ease-in-out;
     list-style: none;
-} */
+}
 
-/* .slide {
-    min-width: 25%;
-    flex: 1 0 25%;
-    position: relative;
+.slide {
+    /* min-width: 25%;
+    flex: 1 0 25%; */
+    /* position: relative; */
     padding: 0 10px;
     box-sizing: border-box;
     opacity: 0.7;
-    transition: opacity 0.3s; */
-    /* display: flex;
+    transition: opacity 0.3s;
+    display: flex;
     width: 100%;
     height: fit-content;
     position: absolute;
     inset: 0;
     opacity: 0;
     transition: opacity 200ms ease-in-out;
-    transition-delay: 200ms; */
-/* } */
+    transition-delay: 200ms;
+}
 
-/* .slide > li {
+.slide > li {
     display: flex;
     width: 100%;
-} */
+}
 
-/* .slide > .projects__card__item { */
-    /* width: 320px;
-    height: 300px; */
-/*     display: flex;
+.slide > .projects__card__item {
+    width: 320px;
+    /* height: 300px; */
+    display: flex;
     flex: 0 0 auto;
     object-fit: cover;
     border-radius: 2px;
-} */
+}
 
 /* .slide .projects__card__item {
     width: 300px;
@@ -235,15 +238,15 @@ a
     overflow: hidden;
 } */
 
-/* .slide[data-active] { */
-    /* display: flex; */
+.slide[data-active] {
+    display: flex;
     /* flex-wrap: wrap; */
-    /* opacity: 1; */
-    /* z-index: 1;
-    transition-delay: 0ms; */
-/* }
- */
-/* .carousel-button {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel__button {
     position: absolute;
     background: none;
     border: none;
@@ -255,7 +258,7 @@ a
     border-radius: .25rem;
     padding: 0 .5rem;
     flex-wrap: wrap;
-} */
+}
 
 
 .carousel__button:hover,
@@ -267,7 +270,7 @@ a
     outline: none;
 }
 
-/* .carousel__button.prev {
+.carousel__button.prev {
     left: -4rem;
 }
 
@@ -277,7 +280,7 @@ a
 
 .tech__stack {
     padding: 10rem 0;
-} */
+}
 
 @media screen and (max-width: 768px) {
 
@@ -295,15 +298,15 @@ a
         width: calc(100% - 20px);
     }
     
-    .carousel-button {
+    .carousel__button {
         font-size: 3rem;
     }
     
-    .carousel-button.prev {
+    .carousel__button.prev {
         left: 1rem;
     }
     
-    .carousel-button.next {
+    .carousel__button.next {
         right: 0.5rem;
     }
 }
