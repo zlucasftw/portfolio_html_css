@@ -147,7 +147,7 @@ a
     position: absolute;
     z-index: 2;
     bottom: 0;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     font-size: .7rem;
     padding: 1.25rem 0;
@@ -209,7 +209,7 @@ a
     height: fit-content;
     position: absolute;
     inset: 0;
-    opacity: 0;
+    /* opacity: 0; */
     transition: opacity 200ms ease-in-out;
     transition-delay: 200ms;
 }
@@ -311,3 +311,27 @@ a
     }
 }
 
+@media screen and (max-width: 1350px) {
+    .slide[data-active] {
+        display: flex;
+        opacity: 1;
+        flex-wrap: wrap;
+        columns: 2;
+        justify-content: center;
+    }
+
+    .projects__cards__item {
+        max-width: 300px;
+        height: auto;
+        width: calc(100% - 20px);
+    }
+
+    .carousel__button.prev {
+        left: -4rem;
+    }
+
+    .carousel__button.next {
+        right: -4rem;
+    }
+
+}
