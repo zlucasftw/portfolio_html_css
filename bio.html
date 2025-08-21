@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIO</title>
+    <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/bio.css">
 </head>
 <body>
-    <header class="header">
+        <header class="header">
             <a href="index.html" class="header__logo__link">
                 <div class="header__logo">
                     <h1 class="header__logo__title">LUCAS GÓIS</h1>
@@ -17,23 +18,21 @@
                 </div>
             </a>
             <button id="nav__open__button" class="menu__open__button" onclick="openSideBar()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
             </button>
             <nav id="navbar" class="nav">
                 <div class="nav__menu">
+                    <button id="nav__close__button" onclick="closeSideBar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </button>
                     <ul class="nav__menu__links">
-                        <li>
-                            <button id="nav__close__button" onclick="closeSideBar()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                                </svg>
-                            </button>
-                        </li>
-                        <li><a href="css/bio.html" class="nav__link active">BIO</a></li>
-                        <li><a href="css/projects.html" class="nav__link">PROJECTS</a></li>
-                        <li><a href="css/contact.html" class="nav__link">CONTACT</a></li>
+                        <li><a href="bio.html" class="nav__link">BIO</a></li>
+                        <li><a href="projects.html" class="nav__link">PROJECTS</a></li>
+                        <li><a href="contact.html" class="nav__link">CONTACT</a></li>
                     </ul>
                 </div>
             </nav>
@@ -114,7 +113,7 @@
             </ul>
 
             <div class="copyright">
-                © LUCAS GÓIS ALL RIGHTS RESERVED.
+                © LUCAS GÓIS | TODOS OS DIREITOS RESERVADOS.
             </div>
     </footer>
 </body>

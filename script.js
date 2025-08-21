@@ -1,9 +1,45 @@
 document.addEventListener("DOMContentLoaded", function() {
     const body = document.querySelector("body");
     body.classList.add("loaded");
+
+    const carousel = document.querySelector("[data-carousel]");
+
+    if (carousel) {
+        const slides = carousel.querySelector("[data-slides]");
+        const buttons = carousel.querySelectorAll("[data-carousel-button]");
+        const slideCount = slides.children.length;
+        const slidesToShow = 4;
+        let currentIndex = 0;
+
+        const maxIndex = Math.max(0, slideCount - slidesToShow);
+
+        function updateCarousel() {
+            Array.from(slides.children).forEach(slide => {
+                slide.removeAttribute("data-active");
+            });
+
+            for (let i = currentIndex; i < currentIndex + slidesToShow && i < slideCount; i++) {
+                slides.children[i].setAttribute("data-active", "");
+            }
+
+            slides.style.transform = `translateX(-${currentIndex * (100 / slidesToShow)}%)`;
+        }
+        
+        updateCarousel();
+
+        buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const direction = button.dataset.carouselButton === "next" ? 1 : -1;
+
+                currentIndex = Math.max(0, Math.min(currentIndex + direction, maxIndex));
+
+                updateCarousel();
+            });
+        });
+    }
 });
 
-const buttons = document.querySelectorAll("[data-carousel-button]");
+/* const buttons = document.querySelectorAll("[data-carousel-button]");
 
 buttons.forEach(button => {
     button.addEventListener("click", () => {
@@ -46,7 +82,7 @@ setInterval(() => {
     slides.children[index].dataset.active = true;
     delete activeSlide.dataset.active;
 
-}, 6500);
+}, 6500); */
 
 /* const navOpenButton = document.querySelector("#open__nav");
 const navCloseButton = document.querySelector("#close__nav");

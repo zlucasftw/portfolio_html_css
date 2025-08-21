@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/header.css"/>
         <link rel="stylesheet" href="css/footer.css"/>
+        <link rel="stylesheet" href="css/carousel.css">
     </head>
     <body id="home">
         
@@ -25,14 +26,12 @@
             </button>
             <nav id="navbar" class="nav">
                 <div class="nav__menu">
+                    <button id="nav__close__button" onclick="closeSideBar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </button>
                     <ul class="nav__menu__links">
-                        <li>
-                            <button id="nav__close__button" onclick="closeSideBar()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                                </svg>
-                            </button>
-                        </li>
                         <li><a href="bio.html" class="nav__link">BIO</a></li>
                         <li><a href="projects.html" class="nav__link">PROJECTS</a></li>
                         <li><a href="contact.html" class="nav__link">CONTACT</a></li>
@@ -50,9 +49,9 @@
             <div class="content__button">
                 <a href="#projects__target" class="start__button">INICIAR</a>
             </div>
-        </main>
+        </main> 
 
-        <section id="projects__target" class="projects" aria-label="Projects Links">
+        <section class="projects" aria-label="Projects Links">
 
                 <h1 class="projects__title">PROJETOS</h1>
 
@@ -60,13 +59,14 @@
                         
                         <div class="carousel" data-carousel>
                             
-                            <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
-                            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+                            <button class="carousel__button prev" data-carousel-button="prev">&#8249;</button>
+                            <button class="carousel__button next" data-carousel-button="next">&#8250;</button>
                             
+                            <div class="carousel__container">
                             <ul data-slides>
                                 <li class="slide" data-active>
                                     <div class="projects__cards__item">
-                                        <a href="">
+                                        <a href="projects.html#project__01">
                                             <div class="projects__cards__item__type">
                                                 Plann.er
                                             </div>
@@ -83,25 +83,26 @@
                                     </div>
                                 </li>
                                 
-                                
+                                <li class="slide">
                                     <div class="projects__cards__item">
-                            <a href="">
-                                <div class="projects__cards__item__type">
-                                    Nearby
-                                </div>
+                                    <a href="">
+                                        <div class="projects__cards__item__type">
+                                            Nearby
+                                        </div>
                             
-                                <div class="projects__cards__item__image">
-                                    <img src="assets/img/projects/image_02.png" alt="Imagem do Projeto Mobile Nearby" data-lazy="true"/>
-                                </div>
+                                        <div class="projects__cards__item__image">
+                                            <img src="assets/img/projects/image_02.png" alt="Imagem do Projeto Mobile Nearby" data-lazy="true"/>
+                                        </div>
                             
                             
-                                <div class="projects__cards__item__description">
-                                    Nearby é um aplicativo em React Native para <br> encontrar cupons de desconto em restaurantes <br> próximos e br opções de comida.
-                                </div>
-                            </a>
+                                        <div class="projects__cards__item__description">
+                                            Nearby é um aplicativo em React Native para <br> encontrar cupons de desconto em restaurantes <br> próximos e br opções de comida.
+                                        </div>
+                                    </a>
                                     </div>
+                                </li>
                                 
-
+                                <li class="slide">
                                     <div class="projects__cards__item">
                                     <a href="">
                                         <div class="projects__cards__item__type">
@@ -118,7 +119,9 @@
                                         </div>
                                     </a>
                                     </div>
+                                </li>
 
+                                <li class="slide">
                                     <div class="projects__cards__item">
                                     <a href="">
                                         <div class="projects__cards__item__type">
@@ -135,7 +138,6 @@
                                         </div>
                                     </a>
                                     </div>
-
                                 </li>
 
                                 <li class="slide">
@@ -155,7 +157,9 @@
                                             </div>
                                         </a>
                                     </div>
+                                </li>
                         
+                                <li class="slide">
                                     <div class="projects__cards__item">
                                         <a href="">
                                             <div class="projects__cards__item__type">
@@ -172,7 +176,9 @@
                                             </div>
                                         </a>
                                     </div>
+                                </li>
                         
+                                <li class="slide">
                                     <div class="projects__cards__item">
                                         <a href="">
                                             <div class="projects__cards__item__type">
@@ -189,7 +195,8 @@
                                             </div>
                                         </a>
                                     </div>
-                        
+                                </li>
+                                <li class="slide">
                                     <div class="projects__cards__item">
                                         <a href="">
                                             <div class="projects__cards__item__type">
@@ -206,10 +213,10 @@
                                             </div>
                                         </a>
                                     </div>
-
                                 </li>
 
                             </ul>
+                            </div>
                         </div>
                     </section>
         </section>
@@ -246,7 +253,7 @@
             </ul>
 
             <div class="copyright">
-                © LUCAS GÓIS ALL RIGHTS RESERVED.
+                © LUCAS GÓIS | TODOS OS DIREITOS RESERVADOS.
             </div>
         </footer>
     </body>
