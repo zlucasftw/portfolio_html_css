@@ -17,7 +17,7 @@
     width: 440px;
     height: 587px;
     width: auto;
-    box-shadow: 0 0 30px 20px rgba(11, 37, 36, .35);
+    box-shadow: rgba(11, 37, 36, 0.35) 0 0 30px 20px;
 }
 
 /* img {
@@ -50,9 +50,9 @@
 
 .biography__text p {
     display: block;
-    margin-bottom: 3rem;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-bottom: 1.5rem;
+    margin-block-start: .8rem;
+    margin-block-end: .8rem;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
