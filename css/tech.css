@@ -54,7 +54,17 @@
         rgba(0, 0, 0, 1) 80%,
         rgba(0, 0, 0, 0)
     );
+    /* animation-play-state: running; */
 }
+
+/* .tech__icons .item {
+    animation-play-state: running;
+} */
+
+/* .tech__icons:hover .item {
+    animation-play-state: paused;
+    background-color: rgba(255, 255, 255, 0.705);
+} */
 
 .item {
     display: flex;
@@ -70,6 +80,21 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: calc(30s / 8 * (8 - var(--n)) * -1);
+}
+
+/* .item:hover {
+    animation-play-state: paused;
+    background-color: rgba(255, 255, 255, 0.705);
+} */
+
+.tech__icons:hover .item {
+    animation-play-state: paused;
+}
+
+.tech__icons:hover .item:hover {
+    background-color: rgba(255, 255, 255, 0.705);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .item img {
