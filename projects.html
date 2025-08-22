@@ -76,7 +76,7 @@
 
             <header class="project__header" id="project__02">
                 <h1 class="project__title">Nearby</h1>
-                <div class="project__date">Mobile | 16/12/2024</div>
+                <div class="project__date">Mobile | 18/11/2024</div>
             </header>
             <div class="project__poster">
                 <picture>
@@ -114,7 +114,7 @@
             </header>
             <div class="project__poster">
                 <picture>
-                    <a href="">
+                    <a href="https://zlucasftw.github.io/imagine-website/">
                         <img src="assets/img/projects/image_03.png" alt="Poster do projeto Imagine">
                     </a>
                 </picture>
@@ -134,46 +134,126 @@
 
                 <p class="github__links">
                     <strong>Repositório do projeto e mais informações</strong><br> 
-                    <a href="">
-                        https://
+                    <a href="https://github.com/zlucasftw/imagine-website">
+                        https://github.com/zlucasftw/imagine-website (Repositório privado no momento)
                     </a>
                 </p>
             </section>
 
             <hr>
 
-            <header class="project__header" id="project__03">
-                <h1 class="project__title">Imagine</h1>
-                <div class="project__date">Frontend | 03/07/2024</div>
+            <header class="project__header" id="project__04">
+                <h1 class="project__title">URL Shortner</h1>
+                <div class="project__date">Backend | 03/07/2024</div>
             </header>
             <div class="project__poster">
                 <picture>
-                    <img src="assets/img/projects/image_03.png" alt="Poster do projeto Imagine">
+                    <a href="https://github.com/zlucasftw/rocketseat-aws-url-shortener">
+                        <img src="assets/img/projects/image_04.png" alt="Poster do projeto URL Shortner">
+                    </a>
                 </picture>
             </div>
 
             <section class="project__description">
                 <p>
-                    <b>Imagine</b> é um site sobre bandas e filmes que visa criar uma experiência agradável com curadoria de conteúdo e apelo a nostalgia para usuários que buscam uma experiência autêntica. Foram utilizadas as tecnologias <b>HTML</b>, <b>CSS</b> e <b>JavaScript</b> para desenvolver a interface do usuário e garantir uma navegação fluida.
+                    <b>URL Shortner</b> é um projeto backend em <b>Java</b> sendo um encurtador de URLs utilizando arquitetura <b>serverless</b> com <b>AWS</b>.
                 </p>
                 <p>
-                    Esse site foi desenvolvido durante o curso de <b>Técnico em Informática para Internet</b> para o projeto integrador do módulo de desenvolvimento web, onde consolidei meus conhecimentos em desenvolvimento desde o design com protótipos com <b>Figma</b>
-                    até o site final hospedado.
+                    O diferencial dessa aplicação é ter uma proposta da criação de um sistema escalável, de fácil manutenção e custos operacionais reduzidos devido à ausência de servidores dedicados e
+                    com serviços gerenciados totalmente pela AWS, um dos pilares da arquitetura serverless.
                 </p>
                 <p>
-                    Posteriormente utilizei o site na matéria de <b>UX - Arquitetura e Usabilidade</b> para aplicar melhorias necessarias ao site e voltar a desenvolver o site, mas focando principalmente em aplicar os conhecimentos aprendidos durante a matéria.
+                    O sistema consiste na criação de uma API onde usuários conseguem enviar uma URL que é recebida pelo <b>API Gateway</b>, e passa pelo processamento em uma função <b>AWS Lambda</b> que no final irá salvar a URL original em um <b>Bucket S3</b>.
+                </p>
+                <p>
+                    No retorno, se recupera a URL original do <b>Bucket S3</b>, passa por o processamento por uma <b>AWS Lambda</b> de redirecionamento, se gera uma URL encurtada que é retornada ao usuário.
+                </p>
+                <p>
+                    As principais tecnologias utilizadas foram <b>Java</b>, <b>AWS com API Gateway, Lambda e S3</b>, <b>Lombok</b> e <b>Jackson</b>.
+                </p>
+                <p class="github__links">
+                    <strong>Repositório do projeto e mais informações</strong><br> 
+                    <a href="">
+                        https://github.com/zlucasftw/rocketseat-aws-url-shortener
+                    </a>
                 </p>
             </section>
 
             <hr>
 
-            <header class="project__header">
+            <header class="project__header" id="project__05">
+                <h1 class="project__title">Freelance Hours</h1>
+                <div class="project__date">Fullstack | 07/10/2024</div>
+            </header>
+            <div class="project__poster">
+                <picture>
+                    <a href="https://github.com/zlucasftw/rocketseat-freelancehours-php">
+                        <img src="assets/img/projects/image_05.png" alt="Poster do projeto Freelance Hours">
+                    </a>
+                </picture>
+            </div>
+
+            <section class="project__description">
+                <p>
+                    <b>Freelance Hours</b> é um projeto desenvolvido em <b>Laravel</b>, onde freelancers podem enviar propostas de horas que podem contribuir em determinado projeto disponível para enviar uma proposta.
+                </p>
+                <p>
+                    É possível nele visualizar se propostas ainda estão sendo aceitas, quanto tempo falta para o encerramento, quais tecnologias necessárias para o projeto, um ranking de quantidade de propostas e menor tempo, e quem fez a publicação do projeto e a sua avaliação, tendo um gerenciamento de usuários na plataforma.
+                </p>
+                <p>
+                    As principais tecnologias utilizadas foram <b>PHP</b>, <b>Laravel</b>, <b>Livewire</b> e <b>Tailwind</b>.
+                </p>
+                <p class="github__links">
+                    <strong>Repositório do projeto e mais informações</strong><br> 
+                    <a href="https://github.com/zlucasftw/rocketseat-freelancehours-php">
+                        https://github.com/zlucasftw/rocketseat-freelancehours-php
+                    </a>
+                </p>
+            </section>
+
+            <hr>
+
+            <header class="project__header" id="project__06">
+                <h1 class="project__title">Portfolio - "The Dude"</h1>
+                <div class="project__date">Frontend | 09/09/2023</div>
+            </header>
+            <div class="project__poster">
+                <picture>
+                    <a href="https://zlucasftw.github.io/lebowski-portfolio/">
+                        <img src="assets/img/projects/image_06.png" alt="Poster do projeto Freelance Hours">
+                    </a>
+                </picture>
+            </div>
+
+            <section class="project__description">
+                <p>
+                    <b>Portfolio - "The Dude"</b> é um projeto desenvolvido em <b>HTML</b> e <b>CSS</b>, onde fiz enquanto estava durante o segundo período da faculdade, em 2023, e para aprender e aperfeiçoar meus conhecimentos em <b>HTML</b>, <b>CSS</b> e <b>JavaScript</b>. 
+                </p>
+                <p>
+                    É um portfolio "tech" fictício feito sobre sobre o personagem "The Dude" do filme "O Grande Lebowski". Nele onde é possível visualizar informações sobre o personagem, suas habilidades, redes sociais.
+                </p>
+                <p>
+                    O que me motivou na escolha na época, foi de que o filme é um dos meus favoritos, e decidi personalizar o portfolio com base no tema do filme e focado no personagem em específico, servindo como uma forma de praticar e aprender mais sobre desenvolvimento web mesmo que divertido.
+                </p>
+                <p class="github__links">
+                    <strong>Repositório do projeto e mais informações</strong><br> 
+                    <a href="https://zlucasftw.github.io/lebowski-portfolio/">
+                        https://zlucasftw.github.io/lebowski-portfolio/
+                    </a>
+                </p>
+            </section>
+
+            <hr>
+
+            <header class="project__header" id="project__07">
                 <h1 class="project__title">Dev Stage</h1>
                 <div class="project__date">Frontend | 03/05/2025</div>
             </header>
             <div class="project__poster">
                 <picture>
-                    <img src="assets/img/projects/image_07.png" alt="Dev Stage project poster">
+                    <a href="https://github.com/zlucasftw/rocketseat-nlw-connect-devstage-react">
+                        <img src="assets/img/projects/image_07.png" alt="Poster do projeto Dev Stage">
+                    </a>
                 </picture>
             </div>
 
@@ -188,8 +268,63 @@
                     Esse projeto representa a parte do frontend do projeto, onde as principais tecnologias
                     utilizadas foram <b>Next.js</b>, <b>React</b>, <b>Tailwind CSS</b>, <b>Biome</b>, <b>Orval</b>
                 </p>
+                <p class="github__links">
+                    <strong>Repositório do projeto e mais informações</strong><br> 
+                    <a href="https://github.com/zlucasftw/rocketseat-nlw-connect-devstage-react">
+                        https://github.com/zlucasftw/rocketseat-nlw-connect-devstage-react
+                    </a>
+                </p>
             </section>
-    
+
+            <hr>
+
+            <header class="project__header" id="project__08">
+                <h1 class="project__title">NLW Agents</h1>
+                <div class="project__date">Fullstack | 08/07/2025</div>
+            </header>
+            <div class="project__poster">
+                <picture>
+                    <a href="https://github.com/zlucasftw/nlw-agents-server">
+                        <img src="assets/img/projects/image_08.png" alt="Poster do projeto NLW Agents">
+                    </a>
+                </picture>
+            </div>
+
+            <section class="project__description">
+                <p>
+                    "NLW Agents" realizado durante o evento NLW Agents, é um projeto que consiste na criação de salas para aulas, eventos ao vivo, com uma descrição, e realização de perguntas para cada sala.
+                </p>
+                <p>
+                    É utilizado um áudio seja da aula, evento, livestream, que é transformada em embeddings para busca semântica, onde é possível encontrar trechos relevantes do conteúdo de forma rápida e eficiente, e com a utilização de uma inteligência artificial, é possível gerar respostas para as perguntas feitas pelos usuários, com base no conteúdo.
+                </p>
+                <p>
+                    Nesse projeto, em que o foco foi mais o backend e garantir seu funcionamento, mas também com uma interface frontend,onde as principais tecnologias
+                    utilizadas foram <b>Next.js</b>, <b>React</b>, <b>TypeScript</b>, <b>Tailwind CSS</b>, <b>Fastify</b>, <b>Drizzle</b>, <b>Postgres (com extensão pgvector)</b> e <b>API do Gemini</b>
+                </p>
+                <p class="github__links">
+                    <strong>Repositório do projeto e mais informações</strong><br> 
+                    <a href="https://github.com/zlucasftw/nlw-agents-server">
+                        https://github.com/zlucasftw/nlw-agents-server
+                    </a>
+                    <br>
+                    <a href="https://github.com/zlucasftw/nlw-agents-web">
+                        https://github.com/zlucasftw/nlw-agents-web
+                    </a>
+                </p>
+                <p class="project__demo">
+                    <img src="assets/img/projects/demo_01.gif" alt="Imagem animada de demonstração do projeto NLW Agents">
+                </p>
+            </section>
+            
+            <hr>
+            
+            <h3 class="project__github">
+                <strong>Essa foi somente a seleção de oito projetos de muitos outros que podem ser encontrados em
+                meu GitHub</strong><br>
+                <a href="https://github.com/zlucasftw" target="_blank">
+                    https://github.com/zlucasftw
+                </a>
+            </h3>
         </article>
         <article class="project">
     
