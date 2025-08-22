@@ -53,6 +53,7 @@
     border-radius: .4rem;
     font-size: .875rem;
     font-family: "Noto Sans", "Heebo", arial, helvetica, sans-serif;
+    resize: none;
 }
 
 .contact__form form input#message {

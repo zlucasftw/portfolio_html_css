@@ -2,6 +2,32 @@ document.addEventListener("DOMContentLoaded", function() {
     const body = document.querySelector("body");
     body.classList.add("loaded");
 
+    /* const slides = document.querySelector("[data-slides]");
+    const buttons = document.querySelectorAll("[data-carousel-button]");
+    const slideCount = slides.children.length;
+    const slidesToShow = 4;
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        Array.from(slides.children).forEach(slide => {
+            slide.removeAttribute("data-active");
+        });
+
+        for (let i = currentIndex; i < currentIndex + slidesToShow && i < slideCount; i++) {
+            slides.children[i].setAttribute("data-active", "");
+        }
+    }
+
+    updateCarousel();
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const direction = button.dataset.carouselButton === "next" ? 1 : -1;
+            currentIndex = Math.max(0, Math.min(currentIndex + direction, slideCount - slidesToShow));
+            updateCarousel();
+        });
+    }); */
+
 
 // TODO: Change the carousel functionality
 /*     const carousel = document.querySelector("[data-carousel]");

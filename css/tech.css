@@ -108,3 +108,10 @@
         left: -20%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .tech__tools {
+        width: 80%;
+        height: auto;
+    }
+}
