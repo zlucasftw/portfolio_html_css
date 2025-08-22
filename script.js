@@ -130,7 +130,7 @@ navLinks.forEach(link => {
     link.addEventListener("click", () => {
         body.classList.remove("show");
         body.classList.remove("nav__open");
-        navOpenButton.setAttribute("ARIA")
+        navOpenButton.setAttribute("aria-expanded", "false");
     });
 })
 
