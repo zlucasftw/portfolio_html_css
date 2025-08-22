@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
+    -webkit-box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
 }
 
 html {
@@ -24,6 +38,7 @@ body {
     position: relative;
     /* padding: 0 0 6rem 0; */
     background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
 }
 
 main {

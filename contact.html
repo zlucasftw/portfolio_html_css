@@ -38,17 +38,37 @@
             </nav>
         </header>
     
-    <main>
-        <section class="contact">
+    <main class="contact__main">
+        <section class="contact__section">
             <article class="contact__article">
                 <header class="contact__header">
                     <h1 class="contact__title">CONTATO</h1>
                 </header>
-                <div class="contact_form">
+                <div class="contact__form">
                     <form action="" method="POST">
                         <p>
                             <label for="name">Nome (Obrigatório)</label>
-                            <input type="text" id="name" name="name" required>
+                            <br>
+                            <input size="40" type="text" id="name" name="name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email (Obrigatório)</label>
+                            <br>
+                            <input size="40" type="email" id="email" name="email" required>
+                        </p>
+                        <p>
+                            <label for="subject">Assunto</label>
+                            <br>
+                            <input size="40" type="text" id="subject" name="subject">
+                        </p>
+                        <p>
+                            <label for="message">Mensagem</label>
+                            <br>
+                            <textarea cols="40" rows="10"  name="message" id="message"></textarea>
+                            <!-- <input type="text" id="message" name="message" required> -->
+                        </p>
+                        <p>
+                            <input type="submit" id="submit" value="Enviar">
                         </p>
                     </form>
                 </div>

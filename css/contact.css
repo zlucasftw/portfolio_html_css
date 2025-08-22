@@ -1,5 +1,96 @@
+.contact__main {
+    position: relative;
+    z-index: 2;
+}
+
+.contact__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 4rem 0;
+}
+
+.contact__header {
+    padding: 3.625rem 0 3.75rem 0;
+    text-align: center;
+}
+
 .contact__title {
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.6;
     font-family: "Noto Sans", "Heebo", arial, helvetica, sans-serif;
+}
+
+.contact__form {
+    max-width: 590px;
+    width: 100%;
+    padding: 1rem 0 5rem 0;
+    margin: 0 auto;
+    font-size: 0.875rem;
+}
+
+.contact__form form {
+    width: 100%;
+}
+
+.contact__form form input {
+    width: 590px;
+    padding: .5625em;
+    margin: .5rem 0 2rem 0;
+    border: 1px solid #C4C7CC;
+    border-radius: .4rem;
+    /* font-size: 1.4rem; */
+    font-family: "Noto Sans", "Heebo", arial, helvetica, sans-serif;
+}
+
+.contact__form form textarea {
+    width: 100%;
+    padding: .5125rem;
+    border: 1px solid #C4C7CC;
+    border-radius: .4rem;
+    font-size: .875rem;
+    font-family: "Noto Sans", "Heebo", arial, helvetica, sans-serif;
+}
+
+.contact__form form input#message {
+    display: block;
+    padding: 2rem;
+}
+
+.contact__form form input#submit {
+    font-size: 0.875rem;
+    padding: .4rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact__form form input#submit:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    font-size: 0.875rem;
+    font-family: "Noto Sans", "Heebo", arial, helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact__title {
+        font-size: 1rem;
+    }
+
+    .contact__form {
+        width: 430px;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+
+    .contact__form form input {
+        width: 100%;
+    }
+
 }
