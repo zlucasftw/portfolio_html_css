@@ -95,7 +95,7 @@ buttons.forEach(button => {
     });
 });
 
-setInterval(() => {
+/* setInterval(() => {
     const slides = document.querySelector("[data-slides]");
 
     let activeSlide = slides.querySelector("[data-active]");
@@ -113,7 +113,7 @@ setInterval(() => {
     slides.children[index].dataset.active = true;
     delete activeSlide.dataset.active;
 
-}, 6500);
+}, 6500); */
 
 /* const navOpenButton = document.querySelector("#open__nav");
 const navCloseButton = document.querySelector("#close__nav");
@@ -160,3 +160,30 @@ navLinks.forEach(link => {
     });
 })
 
+function adjustCarouselForMobile() {
+const isMobile = window.innerWidth <= 768;
+const slides = document.querySelectorAll('[data-slides] .slide');
+
+    if (isMobile) {
+    
+        slides.forEach(slide => {
+        const cards = slide.querySelectorAll('.projects__cards__item');
+        if (cards.length > 1) {
+        
+            for (let i = 1; i < cards.length; i++) {
+                cards[i].style.display = 'none';
+            }
+        }
+    });
+    } else {
+    
+        const allCards = document.querySelectorAll('.projects__cards__item');
+        allCards.forEach(card => {
+            card.style.display = '';
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', adjustCarouselForMobile);
+
+window.addEventListener('resize', adjustCarouselForMobile);
