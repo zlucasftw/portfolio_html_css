@@ -6,7 +6,7 @@ Um site de portfólio pessoal criado para apresentar minha jornada como desenvol
 
 ## 🚀 Acesso ao Site
 
-O portfólio está disponível em: [https://zlucasftw.github.io/portfolio/](https://zlucasftw.github.io/portfolio/)
+O portfólio está disponível em: [https://zlucasftw.github.io/portfolio/](https://zlucasftw.github.io/portfolio_html_css/)
 
 ## 💻 Tecnologias e Recursos Implementados
 
@@ -27,12 +27,12 @@ Para visualizar o projeto em sua máquina:
 
 1. Clone este repositório:
 ```bash
-git clone https://github.com/zlucasftw/portfolio.git
+git clone https://github.com/zlucasftw/portfolio_html_css.git
 ```
 
 2. Navegue até o diretório do projeto:
 ```bash
-cd portfolio
+cd portfolio_html_css
 ```
 
 3. Abra qualquer arquivo HTML no seu navegador:
